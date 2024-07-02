@@ -26,6 +26,5 @@ func main() {
 	// names := &proto.NamesList{
 	// 	Names: []string{"Alice", "Bob", "Cam"},
 	// }
-
 	callSayHello(client)
 }
