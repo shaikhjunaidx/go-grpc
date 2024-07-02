@@ -23,8 +23,11 @@ func main() {
 
 	client := proto.NewGreetServiceClient(conn)
 
-	// names := &proto.NamesList{
-	// 	Names: []string{"Alice", "Bob", "Cam"},
-	// }
-	callSayHello(client)
+	names := &proto.NamesList{
+		Names: []string{"Alice", "Bob", "Cam"},
+	}
+
+	// callSayHello(client)
+
+	callSayHelloServerStream(client, names)
 }
